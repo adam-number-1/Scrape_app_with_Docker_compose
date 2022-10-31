@@ -15,7 +15,7 @@ The app is built for one specific purpose - it tracks a price history of ads of 
 This is very useful information for price negotiations, since you can see independently, which seller actually is flexible on the price and who is not and also, how long and ad has been on. 
 
 ### NOTE
-The areas in which the srape app searches for ads is defined in the ad_areas.txt file. If you want to search in different areas, you just need to add extra lines in this txt file, in the docker-compose file, there is a bind mount defined, that will mount this file with the internal directory of the scrape app's container.
+The areas in which the srape app searches for ads is defined in the scrape_app/ad_areas.txt file. If you want to search in different areas, you just need to add extra lines in this txt file, in the docker-compose file, there is a bind mount defined, that will mount this file with the internal directory of the scrape app's container.
 
 
 
