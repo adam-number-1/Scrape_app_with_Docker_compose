@@ -1,0 +1,23 @@
+services:
+  some-mysql:
+    image: mysql:8.0.31-oracle
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: testpwd
+    networks:
+      - flasknet
+    volumes:
+      - /root/mysqlvol:/var/lib/mysql
+      
+  flask_app:
+    build: .
+    depends_on:
+      - some-mysql
+    networks:
+      - flasknet
+    ports:
+      - 5000:5000
+
+networks:
+  flasknet: {}

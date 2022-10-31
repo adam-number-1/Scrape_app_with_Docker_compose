@@ -1,0 +1,3 @@
+# ignore venv and __pycache__
+/scrape_app_venv
+__pycache__

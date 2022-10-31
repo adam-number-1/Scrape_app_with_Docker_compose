@@ -1,0 +1,7 @@
+{% extends "temp1.html"%}
+{% block content %}
+<h2 align="center">Ad ID: {{id}} history results:</h2>
+{% for ad in result %}
+<p align="center">{{ad.date}} {{ad.price}}</p>
+{% endfor %} 
+{% endblock %}
